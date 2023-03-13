@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    padding: 0;
+    margin: auto;
+    width: 100vw;
+}
+.menu {
+    height: 60px;
+    margin: auto;
+    padding: 0;
+    background-color: bisque;
+}
+.container-xxl {
+    margin: auto;
+    max-width: 1400px;
+    height: inherit;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-logo {
+    margin: 10px 30px;
+    font-size: 30px;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+ul li {
+    margin: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+ul li:hover {
+    transform: translateY(-2px);
+}
