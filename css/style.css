@@ -212,6 +212,7 @@ p::after {
     background-color: #b7e3ff;
     margin-top: 3px;
     padding-bottom: 100px;
+    box-shadow: 0px 0px 5px #000;
 }
 .aboutMe-content {
     display: flex;
@@ -269,6 +270,103 @@ p::after {
     margin-top: 15px;
 }
 
+/*projects*/
+.projects {
+    background-color: #b7e3ff;
+    display: flex;
+    box-shadow: 0px 0px 5px #000;
+}
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.slides-area {
+    height: 700px;
+    width: 1360px;
+    overflow-x: hidden;
+}
+.slider {
+    width: 4080px;
+    height: 100%;
+    display: flex;
+}
+.slide {
+    width: 1440px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.slide-left {
+    flex: 1;
+    height: 90%;
+    margin-left: 50px;
+}
+.slide-left img {
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+.slide-right {
+    flex: 0.5;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.project-title {
+    font-size: 25px;
+    margin: 30px 0px;
+}
+.project-desc {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 50px;
+}
+
+/*contact*/
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-types {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 100px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+input {
+    margin: 5px 0px;
+    line-height: 25px;
+}
+.linkedin-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #0077b5;
+}
+.linkedin-banner img {
+    height: 80px;
+    width: 80px;
+}
+.linkedin-name {
+    font-size: 18px;
+    line-height: 35px;
+    margin-top: 20px;
+}
+
+/*footer*/
 .credits {
     display: flex;
     flex-direction: column;
