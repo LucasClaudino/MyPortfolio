@@ -6,21 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolioPage</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="menu">
-            <div class="container-xxl">
+            <div class="container-xxl container-menu">
                 <div class="menu-logo">LC</div>
                 <nav>
                     <ul>
-                        <li>Sobre Mim</li>
-                        <li>Projetos</li>
-                        <li>Contato</li>
+                        <li class="selected"><a href="#home">Home</a></li>
+                        <li><a href="#aboutMe">Sobre mim</a></li>
+                        <li><a href="#projects">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+    <section class="home" id="home">
+        <div class="container-xxl home-content">
+            <div class="home-left">
+                <div class="text">
+                    <p class="p1">Olá,</p>
+                    <p class="p2">sou <span class="name">Lucas Claudino</span>,</p>
+                    <p class="p3">Desenvolvedor<span class="job"> Front End </span>web!</p>
+                </div>
+                <div class="welcome">Bem vindo ao meu website!</div>
+                <div class="btn-section">
+                    <div class="btn"><a href="#aboutMe">Saiba Mais</a></div>
+                    <div class="btn"><a href="">Contato</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutMe" id="aboutMe">
+        <div class="container-xxl aboutMe-content">
+            <div class="aboutMe-left">
+
+            </div>
+            <div class="aboutMe-right">
+                <h3 class="section-title">Sobre mim</h3>
+                <p class="aboutMe-desc">Meu nome é Lucas Claudino, sou graduado em Engenharia Química pela PUC-PR. Após o término da graduação, realizei um intercâmbio estudantil na Irlanda onde adquiri um ótimo nível de inglês tanto para leitura quanto conversação.</br></br>
+                Em setembro de 2022 decidi me dedicar a area de desenvolvimento web. Iniciei minha jornada com os cursos de HTML, CSS e JavaScript.</br></br>
+                Pretendo continuar me aprofudando nos conhecimentos destas tecnologias bem como iniciar o aprendizado de novas, na pretensão de me tornar um desenvolvedor full stack.</br></br>
+                Este site é o resultado de alguns conhecimentos que adquiri e também onde apresento alguns dos projetos que realizei.</p>
+                <div class="btn"><a href="#projects">Projetos</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="technologies">
+        <div class="tec-title">Tecnologias que utilizo</div>
+        <div class="tec-banners">
+            <div class="banner">
+                <img src="images/html-5.png" alt="html5 icon">
+                <div class="banner-desc">HTML 5</div>
+            </div>
+            <div class="banner">
+                <img src="images/css-3.png" alt="css3 icon">
+                <div class="banner-desc">CSS 3</div>
+            </div>
+            <div class="banner">
+                <img src="images/js.png" alt="JavaScript icon">
+                <div class="banner-desc">JavaScript</div>
+            </div>
+            <div class="banner">
+                <img src="images/bootstrap.png" alt="bootstrap icon">
+                <div class="banner-desc">Bootstrap</div>
+            </div>
+            <div class="banner">
+                <img src="images/github.png" alt="github icon">
+                <div class="banner-desc">GitHub</div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <dev class="container-xxl projects-content">
+
+        </dev>
+    </section>
 </body>
+<footer>
+    <div class="credits">
+        <a target="_blank" href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by riajulislam - Flaticon</a>
+        <a target="_blank" href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a>
+        <a target="_blank" href="https://www.flaticon.com/free-icons/logo" title="logo icons">Logo icons created by Freepik - Flaticon</a>
+        <a target="_blank" href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a>
+        <a target="_blank" href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>
+    </div>
+</footer>
 </html>
