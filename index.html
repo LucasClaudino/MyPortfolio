@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
@@ -37,10 +38,12 @@
                 <div class="welcome">Bem vindo ao meu website!</div>
                 <div class="btn-section">
                     <div class="btn"><a href="#aboutMe">Saiba Mais</a></div>
-                    <div class="btn"><a href="">Contato</a></div>
+                    <div class="btn"><a href="#contact">Contato</a></div>
                 </div>
             </div>
         </div>
+        <div class="art"></div>
+        <div class="art-top"></div>
     </section>
     <section class="aboutMe" id="aboutMe">
         <div class="container-xxl aboutMe-content">
@@ -86,19 +89,47 @@
         <div class="container-xxl projects-content">
             <h3 class="section-title">Meus Projetos</h3>
             <div class="slides-area">
+                <div class="slider-controls">
+                    <div class="slider-ctrl goPrev" onclick="goPrev()"></div>
+                    <div class="slider-ctrl goNext" onclick="goNext()"></div>
+                </div>
                 <div class="slider">
                     <div class="slide">
                         <div class="slide-left">
-                            <img src="" alt="">
+                            <img src="images/projetoPizzas.gif" alt="">
                         </div>
                         <div class="slide-right">
-                            <div class="project-title">Compra de Pizzas</div>
-                            <div class="project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sit dicta amet reiciendis! Officia, sed. Nihil, aliquid hic itaque adipisci eligendi placeat quod sunt consequuntur quae fuga, nostrum molestiae harum!</div>
+                            <div class="project-title">Projeto Compra de Pizzas</div>
+                            <div class="project-desc">Projeto prático realizado em aula com foco na aplicação de conhecimentos de JavaScript, tais como funções, manipulação de DOM e orientação a objetos.<br><br>
+                            Curso de JavaScript <a target="_blank" href="https://b7web.com.br/">B7Web</a>.
+                            </div>
                             <div class="btn"><a href="">Ver projeto</a></div>
                         </div>
                     </div>
-                    <div class="slide">2</div>
-                    <div class="slide">3</div>
+                    <div class="slide">
+                        <div class="slide-left">
+                            <img src="images/projetoAjax.gif" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="project-title">Projeto Ajax</div>
+                            <div class="project-desc">Um dos primeiros projetos realizados em aula, com foco em responsividade e aplicação dos conhecimentos de HTML e CSS<br><br>
+                            Curso de CSS e HTML <a target="_blank" href="https://b7web.com.br/">B7Web</a>.
+                            </div>
+                            <div class="btn"><a href="">Ver projeto</a></div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-left">
+                            <img src="images/projetoUrnaEletronica.gif" alt="">
+                        </div>
+                        <div class="slide-right">
+                            <div class="project-title">Projeto Urna Eletrônica</div>
+                            <div class="project-desc">Projeto prático realizado em aula com foco em aplicação de conhecimentos em JavaScript como manipulação de DOM e funções assíncronas.<br><br>
+                            Curso de JavaScript <a target="_blank" href="https://b7web.com.br/">B7Web</a>.
+                            </div>
+                            <div class="btn"><a href="">Ver projeto</a></div>
+                        </div>
+                    </div>
                 </div>
             </div> 
         </div>
@@ -133,7 +164,9 @@
             <a target="_blank" href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Pixel perfect - Flaticon</a>
             <a target="_blank" href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Freepik - Flaticon</a>
             <a target="_blank" href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/next" title="next icons">Next icons created by Roundicons - Flaticon</a>
         </div>
     </footer>
+    <script src="script.js" ></script>
 </body>
 </html>
