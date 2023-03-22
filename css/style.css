@@ -8,6 +8,11 @@ body {
     background-color: #fcfcfc;
     margin: 0;
 }
+.container-xxl {
+    width: 1440px;
+    height: 100%;
+    margin: auto;
+}
 
 /*Menu*/
 
@@ -16,10 +21,9 @@ header {
     background-color: #f5f5f7;
     box-shadow: 0px 0px 4px;
     position: sticky;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    max-width: 100vw;
+    top: 0;
+    right: 0;
+    left: 0;
     z-index: 999;
 }
 .menu {
@@ -27,11 +31,6 @@ header {
     margin: auto;
     padding: 0;
     color: #000;
-}
-.container-xxl {
-    width: 1440px;
-    height: 100%;
-    margin: auto;
 }
 .container-menu {
     margin: auto;
@@ -109,6 +108,7 @@ ul li:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 99;
 }
 
 .home-left p {
@@ -167,6 +167,7 @@ p::after {
     opacity: 0;
     transform: translateY(3rem);
     animation: fadeInUp 2s 8s ease forwards;
+    z-index: 99;
 }
 @keyframes typewriter {
     to {
@@ -190,6 +191,7 @@ p::after {
     opacity: 0;
     transform: translateY(3rem);
     animation: fadeInUp 2s 9s ease forwards;
+    z-index: 99;
 }
 .btn {
     border: 3px solid #4b92ff;
@@ -234,6 +236,19 @@ p::after {
 }
 .aboutMe-left {
     flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutMe-img {
+    width: 350px;
+    height: 450px;
+    border: 1px solid #000;
+    border-radius: 35px;
+    box-shadow: 0px 0px 5px #000;
+    background-image: url(../images/profile.jpeg);
+    background-size: cover;
+    background-position: bottom;
 }
 .aboutMe-right {
     flex: 1;
@@ -329,7 +344,7 @@ p::after {
 .slider {
     width: 4080px;
     display: flex;
-    transition: ease 1s;
+    transition: ease 4s;
 }
 .slide {
     width: 1440px;
@@ -412,13 +427,398 @@ input {
 }
 
 /*footer*/
-.credits {
+footer {
+    background-color: #b7e3ff;
+    box-shadow: 0px 0px 5px #000;
+}
+.footer-right {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.credits {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 .credits a {
     text-decoration: none;
     color: #000;
-    font-size: 10px;
-    line-height: 15px;
+    font-size: 7px;
+    padding: 6px;
+}
+
+
+/* Responsive Design */
+
+@media (min-width: 1300px) and (max-width: 1480px) {
+    .container-xxl {
+        width: 1280px;
+    }
+    .slides-area {
+        width: 1280px;
+    }
+    .slider-controls {
+        width: 1280px;
+    }
+    .slider {
+        width: 3840px;
+    }
+    .slide {
+        width: 1280px;
+    }
+    .art {
+        border: 200px solid #b7e3ff;
+        border-top-color: transparent;
+        border-left-color: transparent;
+    }
+    .art-top {
+        border: 200px solid #b7e3ff;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+    }
+    .aboutMe-desc {
+        margin-right: 30px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .tec-banners {
+        gap: 0px;
+    }
+
+
+}
+@media (min-width: 1050px) and (max-width: 1299px) {
+    .container-xxl {
+        width: 1024px;
+    }
+    .slides-area {
+        width: 1024px;
+    }
+    .slider-controls {
+        width: 1024px;
+    }
+    .slider {
+        width: 3072px;
+    }
+    .slide {
+        width: 1024px;
+    }
+    .art {
+        border: 150px solid #b7e3ff;
+        border-top-color: transparent;
+        border-left-color: transparent;
+    }
+    .art-top {
+        border: 150px solid #b7e3ff;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+    }
+    .aboutMe-desc {
+        margin-right: 30px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .aboutMe-left {
+        flex: 1;
+    }
+    .tec-banners {
+        gap: 0px;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .banner {
+        width: 200px;
+    }
+    .slide-left img {
+        background-color: #000;
+        width: 600px;
+        box-shadow: 0px 0px 6px #000;
+        margin-top: 6px;
+    }
+    .slide-right {
+        flex: 0.5;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .project-desc {
+        font-size: 14px;
+    }
+    .project-title {
+        font-size: 25px;
+    }
+    .section-title {
+        margin: 30px 0px;
+        font-size: 30px;
+    }
+    .home-left p {
+        font-size: 35px;
+        line-height: 70px;
+        font-family: 'Martian Mono', monospace;
+        text-align: center;
+        position: relative;
+        width: max-content;
+    }
+    .name, .job {
+        font-size: 50px;
+        color: #4b92ff;
+        font-weight: 600;
+    }
+    .welcome {
+        font-size: 30px;
+    }
+    .btn {
+        line-height: 30px;
+        font-size: 18px;
+        width: 150px;
+    }
+    ul li {
+        font-size: 16px;
+    }
+    .menu-logo {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 880px) and (max-width: 1049px) {
+    .container-xxl {
+        width: 860px;
+    }
+    .slides-area {
+        width: 860px;
+    }
+    .slider-controls {
+        width: 860px;
+    }
+    .slider {
+        width: 2580px;
+    }
+    .slide {
+        width: 860px;
+        flex-direction: column;
+    }
+    .slide-right {
+        margin: 0px 50px;
+    }
+    .art {
+        border: 100px solid #b7e3ff;
+        border-top-color: transparent;
+        border-left-color: transparent;
+    }
+    .art-top {
+        border: 100px solid #b7e3ff;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+    }
+    .aboutMe-desc {
+        margin-right: 30px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .aboutMe-left {
+        display: none;
+    }
+    .tec-banners {
+        gap: 20px;
+        grid-template-columns: auto auto auto auto auto;
+        margin-bottom: 20px;
+    }
+    .banner {
+        width: 150px;
+    }
+    .banner img {
+        width: 60px;
+        height: 60px;
+    }
+    .banner-desc {
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .linkedin-banner img {
+        width: 60px;
+        height: 60px;
+    }
+    .linkedin-name {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .slide-left img {
+        background-color: #000;
+        width: 600px;
+        box-shadow: 0px 0px 6px #000;
+        margin-top: 6px;
+    }
+    .slide-right {
+        flex: 0.5;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .project-desc {
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+    .project-title {
+        font-size: 25px;
+    }
+    .section-title {
+        margin: 30px 0px;
+        font-size: 30px;
+    }
+    .home-left p {
+        font-size: 35px;
+        line-height: 70px;
+        font-family: 'Martian Mono', monospace;
+        text-align: center;
+        position: relative;
+        width: max-content;
+    }
+    .name, .job {
+        font-size: 50px;
+        color: #4b92ff;
+        font-weight: 600;
+    }
+    .welcome {
+        font-size: 30px;
+    }
+    .btn {
+        line-height: 30px;
+        font-size: 18px;
+        width: 150px;
+    }
+    .credits a {
+        font-size: 4px;
+    }
+    ul li {
+        font-size: 16px;
+    }
+    .menu-logo {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 879px) {
+    .container-xxl {
+        width: 640px;
+    }
+    .slides-area {
+        width: 640px;
+    }
+    .slider-controls {
+        width: 640px;
+    }
+    .slider {
+        width: 1920px;
+    }
+    .slide {
+        width: 640px;
+        flex-direction: column;
+    }
+    .slide-right {
+        margin: 0px 50px;
+    }
+    .art {
+        border: 50px solid #b7e3ff;
+        border-top-color: transparent;
+        border-left-color: transparent;
+    }
+    .art-top {
+        border: 50px solid #b7e3ff;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+    }
+    .aboutMe-desc {
+        margin-right: 30px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .aboutMe-left {
+        display: none;
+    }
+    .tec-title {
+        font-size: 20px;
+    }
+    .tec-banners {
+        gap: 30px;
+        grid-template-columns: auto auto auto auto auto;
+        margin-bottom: 20px;
+    }
+    .banner {
+        width: 100px;
+    }
+    .banner img {
+        width: 60px;
+        height: 60px;
+    }
+    .banner-desc {
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .linkedin-banner img {
+        width: 60px;
+        height: 60px;
+    }
+    .linkedin-name {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .contact-types {
+        flex-direction: column;
+    }
+    .contact-left {
+        margin-bottom: 30px;
+    }
+    .slide-left img {
+        background-color: #000;
+        width: 600px;
+        box-shadow: 0px 0px 6px #000;
+        margin-top: 6px;
+    }
+    .slide-right {
+        flex: 0.5;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .project-desc {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .project-title {
+        font-size: 20px;
+    }
+    .section-title {
+        margin: 30px 0px;
+        font-size: 22px;
+    }
+    .home-left p {
+        font-size: 25px;
+        line-height: 45px;
+        font-family: 'Martian Mono', monospace;
+        text-align: center;
+        position: relative;
+        width: max-content;
+    }
+    .name, .job {
+        font-size: 35px;
+        color: #4b92ff;
+        font-weight: 600;
+    }
+    .welcome {
+        font-size: 22px;
+    }
+    .btn {
+        line-height: 25px;
+        font-size: 14px;
+        width: 120px;
+    }
+    .credits a {
+        font-size: 4px;
+    }
+    ul li {
+        font-size: 14px;
+        margin: 0px 10px;
+    }
+    .menu-logo {
+        font-size: 20px;
+    }
 }

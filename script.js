@@ -1,3 +1,5 @@
+// Slides
+
 let totalSlides = document.querySelectorAll('.slide').length;
 let currentSlide = 0;
 
@@ -10,17 +12,17 @@ function goPrev() {
         currentSlide = totalSlides - 1;
     }
     updateMargin();
-}
+};
 function goNext() {
     currentSlide++;
     if(currentSlide > (totalSlides - 1)) {
         currentSlide = 0;
     }
     updateMargin();
-}
+};
 function updateMargin() {
     let newMargin = (currentSlide * document.querySelector('.slide').clientWidth);
     document.querySelector('.slider').style.marginLeft = `-${newMargin}px`;
-}
+};
 
 setInterval(goNext, 10000);
