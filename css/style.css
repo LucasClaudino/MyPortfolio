@@ -44,7 +44,7 @@ header {
     cursor: pointer;
     margin: 0px 30px;
 }
-.menu-logo:hover {
+.menu .menu-logo:hover {
     transform: scale(1.2, 1.2);
 }
 ul {
@@ -403,7 +403,7 @@ form {
     background-color: #b7e3ff;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 10px #4b92ff;
 }
 label {
     margin-bottom: 25px;
@@ -425,7 +425,8 @@ textarea {
 }
 label span {
     position: absolute;
-    color: #0077b5;
+    color: #4b92ff;
+    font-weight: 600;
     margin-left: 25px;
     transform: translateY(-13px);
     background-color: #fcfcfc;
@@ -439,7 +440,7 @@ label span {
     border-radius: 5px;
 }
 input:focus, textarea:focus {
-    background-color: #f0f0f0;
+    background-color: #e0e0e0;
     transition: ease 1s;
 }
 
@@ -468,6 +469,27 @@ input:focus, textarea:focus {
 footer {
     background-color: #b7e3ff;
     box-shadow: 0px 0px 5px #000;
+    padding-top: 20px;
+}
+.footer-container {
+    display: flex;
+    align-items: center;
+}
+.footer-right {
+    flex: 1;
+}
+.footer-left {
+    flex: 1;
+}
+footer h5 {
+    margin-bottom: 20px;
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+footer h6 {
+    font-weight: normal;
+    margin-bottom: 15px;
 }
 .footer-right {
     display: flex;
@@ -484,6 +506,10 @@ footer {
     color: #000;
     font-size: 7px;
     padding: 6px;
+}
+.logo-footer {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -740,6 +766,16 @@ footer {
         font-size: 12px;
         transform: translateY(-10px);
     }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-left {
+        display: flex;
+    }
+    .footer h5 {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 @media (min-width: 660px) and (max-width: 879px) {
@@ -762,6 +798,15 @@ footer {
     .slide-right {
         margin: 0px 50px;
     }
+    .slide-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .slide-left img {
+        max-width: 500px;
+    }
     .art {
         border: 50px solid #b7e3ff;
         border-top-color: transparent;
@@ -779,6 +824,10 @@ footer {
     }
     .aboutMe-left {
         display: none;
+    }
+    .aboutMe-right {
+        margin-left: 30px;
+        margin-right: 30px;
     }
     .tec-title {
         font-size: 20px;
@@ -874,5 +923,356 @@ footer {
     label span {
         font-size: 12px;
         transform: translateY(-10px);
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-left {
+        display: flex;
+    }
+    .footer h5 {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 659px) {
+    .container-xxl {
+        width: 440px;
+    }
+    .slides-area {
+        width: 440px;
+    }
+    .slider-controls {
+        width: 440px;
+    }
+    .slider {
+        width: 1320px;
+    }
+    .slide {
+        width: 440px;
+        flex-direction: column;
+    }
+    .slide-right {
+        margin: 0px 50px;
+    }
+    .slide-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 440px;
+    }
+    .slide-left img {
+        max-width: 340px;
+    }
+    .art {
+        border: 30px solid #b7e3ff;
+        border-top-color: transparent;
+        border-left-color: transparent;
+    }
+    .art-top {
+        border: 30px solid #b7e3ff;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+    }
+    .aboutMe-desc {
+        margin-right: 30px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .aboutMe-left {
+        display: none;
+    }
+    .aboutMe-right {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .tec-title {
+        font-size: 20px;
+    }
+    .tec-banners {
+        grid-template-columns: auto auto auto;
+        margin-bottom: 60px;
+    }
+    .banner {
+        width: 70px;
+        height: auto;
+    }
+    .banner img {
+        width: 40px;
+        height: 40px;
+    }
+    .banner-desc {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .linkedin-banner img {
+        width: 40px;
+        height: 40px;
+    }
+    .linkedin-name {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .contact-types {
+        flex-direction: column;
+    }
+    .contact-left {
+        margin-bottom: 60px;
+    }
+    .slide-left img {
+        background-color: #000;
+        width: 600px;
+        box-shadow: 0px 0px 6px #000;
+        margin-top: 6px;
+    }
+    .slide-right {
+        flex: 0.5;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .project-desc {
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .project-title {
+        font-size: 20px;
+    }
+    .section-title {
+        margin: 30px 0px;
+        font-size: 22px;
+    }
+    .home-left p {
+        font-size: 18px;
+        line-height: 32px;
+        font-family: 'Martian Mono', monospace;
+        text-align: center;
+        position: relative;
+        width: max-content;
+    }
+    .name, .job {
+        font-size: 26px;
+        color: #4b92ff;
+        font-weight: 600;
+    }
+    .welcome {
+        font-size: 18px;
+    }
+    .btn {
+        line-height: 25px;
+        font-size: 14px;
+        width: 120px;
+    }
+    .credits a {
+        font-size: 4px;
+    }
+    ul li {
+        font-size: 10px;
+        margin: 0px 10px;
+    }
+    .menu-logo {
+        font-size: 20px;
+    }
+    form {
+        width: 420px;
+    }
+    input, textarea {
+        font-size: 14px;
+        line-height: 20px;
+        width: 380px;
+    }
+    label span {
+        font-size: 12px;
+        transform: translateY(-10px);
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-left {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .footer h5 {
+        padding: 0;
+        font-size: 10px;
+        margin: 0px;
+    }
+    .logo-footer {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 449px) {
+    .container-xxl {
+        width: 320px;
+    }
+    .slides-area {
+        width: 320px;
+    }
+    .slider-controls {
+        width: 320px;
+    }
+    .slider {
+        width: 960px;
+    }
+    .slide {
+        width: 320px;
+        flex-direction: column;
+    }
+    .slide-right {
+        margin: 0px 50px;
+    }
+    .slide-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+    }
+    .slide-left img {
+        max-width: 300px;
+    }
+    .art {
+        border: 30px solid #b7e3ff;
+        border-top-color: transparent;
+        border-left-color: transparent;
+    }
+    .art-top {
+        border: 30px solid #b7e3ff;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+    }
+    .aboutMe-desc {
+        margin-right: 30px;
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .aboutMe-left {
+        display: none;
+    }
+    .aboutMe-right {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .tec-title {
+        font-size: 14px;
+    }
+    .tec-banners {
+        grid-template-columns: auto auto auto;
+        margin-bottom: 40px;
+        gap: 50px;
+    }
+    .banner {
+        width: 50px;
+        height: auto;
+    }
+    .banner img {
+        width: 40px;
+        height: 40px;
+    }
+    .banner-desc {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .linkedin-banner img {
+        width: 40px;
+        height: 40px;
+    }
+    .linkedin-name {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .contact-types {
+        flex-direction: column;
+    }
+    .contact-left {
+        margin-bottom: 60px;
+    }
+    .slide-left img {
+        background-color: #000;
+        width: 260px;
+        box-shadow: 0px 0px 6px #000;
+        margin-top: 6px;
+    }
+    .slide-right {
+        flex: 0.5;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .project-desc {
+        font-size: 10px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .project-title {
+        font-size: 14px;
+    }
+    .section-title {
+        margin: 30px 0px;
+        font-size: 14px;
+    }
+    .home-left p {
+        font-size: 12px;
+        line-height: 20px;
+        font-family: 'Martian Mono', monospace;
+        text-align: center;
+        position: relative;
+        width: max-content;
+    }
+    .name, .job {
+        font-size: 16px;
+        color: #4b92ff;
+        font-weight: 600;
+    }
+    .welcome {
+        font-size: 12px;
+    }
+    .btn {
+        line-height: 16px;
+        font-size: 10px;
+        width: 100px;
+    }
+    .credits a {
+        font-size: 4px;
+    }
+    ul li {
+        font-size: 10px;
+        margin: 0px 10px;
+        display: none;
+    }
+    .menu-logo {
+        font-size: 20px;
+    }
+    form {
+        width: 310px;
+    }
+    input, textarea {
+        font-size: 12px;
+        line-height: 18px;
+        width: 280px;
+    }
+    label span {
+        font-size: 10px;
+        transform: translateY(-10px);
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-left {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .footer-left h5 {
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+        text-align: center;
+    }
+    .logo-footer {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footer-right h6 {
+        font-size: 8px;
     }
 }
