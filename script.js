@@ -12,10 +12,10 @@ function toggleMenu() {
     let menuImg = document.querySelector('.menu-opener');
     if(nav.classList.contains('show')) {
         nav.classList.remove('show');
-        menuImg.style.backgroundImage = ('url(/images/menu.png)');
+        menuImg.classList.remove('close');
     } else {
         nav.classList.add('show');
-        menuImg.style.backgroundImage = ('url(/images/close.png)');
+        menuImg.classList.add('close');
     };
 };
 
