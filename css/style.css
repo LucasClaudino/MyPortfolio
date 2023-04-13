@@ -25,7 +25,7 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 999;
+    z-index: 99;
 }
 .menu {
     height: 60px;
@@ -53,6 +53,7 @@ header {
     cursor: pointer;
     display: none;
     border-radius: 5px;
+    z-index: 199;
 }
 ul {
     list-style: none;
