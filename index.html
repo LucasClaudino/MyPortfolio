@@ -16,18 +16,19 @@
         <div class="menu">
             <div class="container-xxl container-menu">
                 <div class="menu-logo">LC</div>
+                <div class="menu-opener" onclick="toggleMenu()"></div>
                 <nav>
                     <ul>
-                        <li class="selected"><a href="#home" >Home</a></li>
-                        <li><a href="#aboutMe" >Sobre mim</a></li>
-                        <li><a href="#projects">Projetos</a></li>
-                        <li><a href="#contact" >Contato</a></li>
+                        <li class="selected home" onclick="toggleMenu()"><a href="#home" >Home</a></li>
+                        <li class="aboutMe" onclick="toggleMenu()"><a href="#aboutMe" >Sobre mim</a></li>
+                        <li class="projects" onclick="toggleMenu()"><a href="#projects">Projetos</a></li>
+                        <li class="contact" onclick="toggleMenu()"><a href="#contact" >Contato</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <section class="home" id="home">
+    <section id="home">
         <div class="container-xxl home-content">
             <div class="home-left">
                 <div class="text">
@@ -45,7 +46,7 @@
         <div class="art"></div>
         <div class="art-top"></div>
     </section>
-    <section class="aboutMe" id="aboutMe">
+    <section id="aboutMe">
         <div class="container-xxl aboutMe-content">
             <div class="aboutMe-left">
                 <div class="aboutMe-img"></div>
@@ -60,7 +61,7 @@
             </div>
         </div>
     </section>
-    <section class="technologies">
+    <section id="technologies">
         <div class="tec-title">Tecnologias que utilizo</div>
         <div class="tec-banners">
             <div class="banner">
@@ -85,7 +86,7 @@
             </div>
         </div>
     </section>
-    <section class="projects" id="projects">
+    <section id="projects">
         <div class="container-xxl projects-content">
             <h3 class="section-title">Meus Projetos</h3>
             <div class="slides-area">
@@ -134,27 +135,27 @@
             </div> 
         </div>
     </section>
-    <section class="contact" id="contact">
+    <section id="contact">
         <div class="container-xxl contact-content">
             <h3 class="section-title">Entre em contato</h3>
             <div class="contact-types">
                 <div class="contact-left">
-                    <form action="" method="POST">
+                    <form action="" method="POST" class="formValidator">
                         <label>
                             <span>Nome</span>
-                            <input type="text">
+                            <input type="text" name="nome" data-rules="required|min=2">
                         </label>
                         <label>
                             <span>Email</span>
-                            <input type="email">
+                            <input type="email" name="email" data-rules="required">
                         </label>
                         <label>
                             <span>Assunto</span>
-                            <input type="text">
+                            <input type="text" name="assunto" data-rules="required|min=2">
                         </label>
                         <label>
                             <span>Digite sua mensagem</span>
-                            <textarea name="textarea"></textarea>
+                            <textarea name="textarea" data-rules="required|min=10"></textarea>
                         </label>
                         <button class="btn"><a href="">Enviar</a></button>
                     </form>
