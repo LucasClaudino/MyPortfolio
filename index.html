@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -144,24 +144,24 @@
             <h3 class="section-title">Entre em contato</h3>
             <div class="contact-types">
                 <div class="contact-left">
-                    <form action="" method="POST" class="formValidator">
+                    <form action="" method="POST">
                         <label>
                             <span>Nome</span>
-                            <input type="text" name="nome" data-rules="required|min=2">
+                            <input type="text" name="nome" data-rules="required|min=2" class="formName input" placeholder="">
                         </label>
                         <label>
                             <span>Email</span>
-                            <input type="email" name="email" data-rules="required">
+                            <input type="email" name="email" data-rules="required|email" class="email input">
                         </label>
                         <label>
                             <span>Assunto</span>
-                            <input type="text" name="assunto" data-rules="required|min=2">
+                            <input type="text" name="assunto" data-rules="required|min=2" class="assunto input">
                         </label>
                         <label>
                             <span>Digite sua mensagem</span>
-                            <textarea name="textarea" data-rules="required|min=10"></textarea>
+                            <textarea name="textarea" data-rules="required" class="textArea input"></textarea>
                         </label>
-                        <button class="btn"><a href="">Enviar</a></button>
+                        <button class="btn"><a>Enviar</a></button>
                     </form>
                 </div>
                 <div class="contact-right">
