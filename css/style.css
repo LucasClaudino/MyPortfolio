@@ -44,6 +44,10 @@ header {
     font-size: 30px;
     margin: 0px 30px;
 }
+.menu-logo a {
+    text-decoration: none;
+    color: #000;
+}
 .menu-opener {
     width: 30px;
     height: 30px;
@@ -308,19 +312,21 @@ p::after {
 .tec-title {
     font-size: 25px;
     line-height: 40px;
-    margin: 30px 0px 50px 0px;
+    margin: 30px 0px 30px 0px;
 }
 .tec-banners {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: auto auto auto auto auto;
-    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: inherit;
 }
 .banner {
-    width: 250px;
-    height: 150px;
+    width: 200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .banner img {
@@ -377,7 +383,7 @@ p::after {
 .slider {
     width: 4080px;
     display: flex;
-    transition: ease 1s;
+    transition: ease 0.5s;
 }
 .slide {
     width: 1440px;
@@ -548,6 +554,10 @@ footer h6 {
     display: flex;
     align-items: center;
 }
+.logo-footer a {
+    text-decoration: none;
+    color: #000;
+}
 
 
 /* Responsive Design */
@@ -582,9 +592,6 @@ footer h6 {
         margin-right: 30px;
         font-size: 16px;
         line-height: 28px;
-    }
-    .tec-banners {
-        gap: 0px;
     }
 
 
@@ -622,13 +629,6 @@ footer h6 {
     }
     .aboutMe-left {
         flex: 1;
-    }
-    .tec-banners {
-        gap: 0px;
-        grid-template-columns: auto auto auto auto auto;
-    }
-    .banner {
-        width: 200px;
     }
     .slide-left img {
         background-color: #000;
@@ -717,11 +717,6 @@ footer h6 {
     }
     .aboutMe-left {
         display: none;
-    }
-    .tec-banners {
-        gap: 20px;
-        grid-template-columns: auto auto auto auto auto;
-        margin-bottom: 20px;
     }
     .banner {
         width: 150px;
@@ -869,13 +864,8 @@ footer h6 {
     .tec-title {
         font-size: 20px;
     }
-    .tec-banners {
-        gap: 30px;
-        grid-template-columns: auto auto auto auto auto;
-        margin-bottom: 20px;
-    }
     .banner {
-        width: 100px;
+        width: 120px;
     }
     .banner img {
         width: 60px;
@@ -1027,20 +1017,15 @@ footer h6 {
     .tec-title {
         font-size: 20px;
     }
-    .tec-banners {
-        grid-template-columns: auto auto auto;
-        margin-bottom: 60px;
-    }
     .banner {
-        width: 70px;
-        height: auto;
+        width: 85px;
     }
     .banner img {
         width: 40px;
         height: 40px;
     }
     .banner-desc {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 20px;
     }
     .linkedin-banner img {
@@ -1232,14 +1217,8 @@ footer h6 {
     .tec-title {
         font-size: 14px;
     }
-    .tec-banners {
-        grid-template-columns: auto auto auto;
-        margin-bottom: 40px;
-        gap: 50px;
-    }
     .banner {
-        width: 50px;
-        height: auto;
+        width: 70px;
     }
     .banner img {
         width: 40px;
@@ -1248,6 +1227,7 @@ footer h6 {
     .banner-desc {
         font-size: 10px;
         line-height: 16px;
+        display: none;
     }
     .linkedin-banner img {
         width: 40px;
@@ -1440,14 +1420,8 @@ footer h6 {
     .tec-title {
         font-size: 14px;
     }
-    .tec-banners {
-        grid-template-columns: auto auto auto;
-        margin-bottom: 40px;
-        gap: 50px;
-    }
     .banner {
-        width: 50px;
-        height: auto;
+        width: 65px;
     }
     .banner img {
         width: 40px;
@@ -1456,6 +1430,7 @@ footer h6 {
     .banner-desc {
         font-size: 10px;
         line-height: 16px;
+        display: none;
     }
     .linkedin-banner img {
         width: 40px;
